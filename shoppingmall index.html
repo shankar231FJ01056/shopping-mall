@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #0056b3; /* Dark blue */
+        }
+        .navbar .nav-link {
+            color: white; /* White text for links */
+        }
+        .navbar .nav-link:hover {
+            color: #ffcc00; /* Bright yellow on hover */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensure the image scales and crops appropriately */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-3 text-center">
+        <h1>Welcome to Panda  Mall</h1>
+        <p>Your one-stop destination for shopping, dining, and entertainment!</p>
+    </header>
+
+    <!-- Navigation Bar with Dropdown -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#home">Ismart Shankar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#stores">Stores</a></li>
+                            <li><a class="dropdown-item" href="#offers">Offers</a></li>
+                            <li><a class="dropdown-item" href="#events">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#home">Home</a></li>
+            <li class="breadcrumb-item"><a href="#shops">Shops</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Featured Shops</li>
+        </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Experience the Best</h2>
+            <p class="lead">Find top brands, exclusive offers, and great dining options.</p>
+            <a href="#shops" class="btn btn-primary mt-3">Explore Shops</a>
+        </div>
+    </section>
+
+    <!-- Featured Shops Section -->
+    <section id="shops" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Shops</h2>
+            <div class="row">
+                <!-- Shop 1 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.cIY7ro2rrCQCGpgAqeTaMQHaEc?w=291&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="Shop 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion Avenue</h5>
+                            <p class="card-text">Discover the latest trends in clothing and accessories.</p>
+                            <a href="https://www.flipkart.com/clothing-and-accessories/fashion-avenue~brand/pr?sid=clo" class="btn btn-primary">Visit Shop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop 2 -->
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img src="https://marketedly.com/wp-content/uploads/2021/03/gadgets-you-should-own.jpg" class="card-img-top" alt="Shop 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Gadget World</h5>
+                            <p class="card-text">Get the best deals on electronics and gadgets.</p>
+                            <a href="https://www.gadgetworld08.in/?srsltid=AfmBOor1-ZnWErIPoZc6BKZjcjahuqPCmiqCYUnEu8p0qv1PNHkkNNLo" class="btn btn-primary">Visit Shop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop 3 -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP._EL9QJoEC5MYwxbwlWp-MQHaE8?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="Shop 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Food Court</h5>
+                            <p class="card-text">Enjoy delicious meals and snacks.</p>
+                            <a href="https://www.paradisefoodcourt.in/" class="btn btn-primary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-secondary text-white py-3">
+        <p>&copy; 2025 Panda Mall. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
